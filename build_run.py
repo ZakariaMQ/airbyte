@@ -12,10 +12,10 @@ def run_commands(commands):
 
 if __name__ == "__main__":
     commands = [
-        "apt install -y docker-compose-plugin",
-        "docker compose version"
+        "sudo apt install -y docker-compose-plugin",
+        "docker compose version",
+        "./run-ab-platform.sh -b"
     ]
     
     run_commands(commands)
-    subprocess.run('./run-ab-platform.sh -b', shell=True, check=True)
     print("Started Airbyte successfully.")
