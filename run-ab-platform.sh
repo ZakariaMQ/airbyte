@@ -5,6 +5,8 @@ VERSION=0.63.3
 set -o nounset # -u exit if a variable is not set
 set -o errexit # -f exit for any command failure"
 
+sudo apt install -y docker-compose-plugin
+
 readonly scriptVersion="$VERSION"
 
 # text color escape codes (please note \033 == \e but OSX doesn't respect the \e)
